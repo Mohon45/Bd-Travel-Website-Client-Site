@@ -1,0 +1,21 @@
+.nav-logo {
+  font-size: 1.8rem;
+  font-family: "Abril Fatface", cursive;
+}
+.nav-logo img {
+  margin-right: 20px;
+}
+.nav-link {
+  text-decoration: none;
+  font-size: 1.3rem;
+  margin-left: 5px;
+  margin-right: 5px;
+  border-radius: 10px;
+}
+.nav-link:hover {
+  background-color: lightskyblue;
+  border-radius: 10px;
+}
+.user-name {
+  text-decoration: none;
+}

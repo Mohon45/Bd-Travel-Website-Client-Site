@@ -1,0 +1,45 @@
+.banner {
+  background-image: url("https://i.ibb.co/KbP1H28/flat-lay-yellow-luggage-with-copy-space-1.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position-y: bottom;
+}
+.banner {
+  width: 100%;
+  height: 650px;
+}
+.banner-title-desc {
+  width: 600px;
+  margin-left: 15%;
+  padding-top: 100px;
+}
+.top-title {
+  color: #f1481f;
+}
+.bottom-title {
+  color: #33406a;
+}
+.banner-title-desc p {
+  width: 500px;
+  font-size: 1.5rem;
+  color: #33406a;
+  font-weight: 600;
+}
+.banner-title-desc h1 {
+  font-family: "Abril Fatface", cursive;
+}
+
+@media only screen and (max-width: 688px) {
+  .banner {
+    width: 100%;
+  }
+  .banner-title-desc {
+    width: auto;
+    margin-left: 10px;
+    padding-top: 50px;
+  }
+  .banner-title-desc p {
+    width: auto;
+    font-size: 1rem;
+  }
+}

@@ -1,0 +1,22 @@
+.login-section h1 {
+  text-align: center;
+  margin: auto;
+  color: #33406a;
+  font-weight: 600;
+  font-family: "Abril Fatface", cursive;
+}
+.login-section img {
+  width: 50%;
+  height: 500px;
+  margin-left: 25%;
+}
+.GoogleSignInBtn {
+  text-align: center;
+  border: none;
+  background-color: #0b5ed7;
+  color: white;
+  font-size: 1.6rem;
+  border-radius: 5px;
+  margin-left: 45%;
+  margin-top: 1rem;
+}

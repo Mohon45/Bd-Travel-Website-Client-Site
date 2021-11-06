@@ -1,0 +1,38 @@
+.about {
+  display: flex;
+  align-items: center;
+}
+.desc-btn {
+  border: none;
+  background-color: #0b5ed7;
+  color: white;
+  font-size: 1.2rem;
+  border-radius: 10px;
+}
+.desc-btn:hover {
+  background-color: white;
+  color: black;
+  border: 1px solid #0b5ed7;
+}
+.facilities {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 20px;
+}
+.facilities div {
+  background-color: rgba(231, 238, 204, 0.527);
+  padding-left: 20px;
+  padding-top: 20px;
+  border-radius: 10px;
+}
+.facilities div i {
+  color: #33406a;
+}
+
+@media only screen and (max-width: 688px) {
+  .facilities {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    grid-gap: 20px;
+  }
+}

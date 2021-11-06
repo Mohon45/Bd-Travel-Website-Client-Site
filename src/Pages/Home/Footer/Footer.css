@@ -1,0 +1,20 @@
+.footer {
+  background-color: black;
+  color: white;
+  padding-top: 30px;
+  padding-bottom: 30px;
+}
+.quick-link a {
+  text-decoration: none;
+  display: flex;
+  font-size: 1.3rem;
+}
+.footer-intro {
+  color: #0bc560;
+}
+
+@media only screen and (max-width: 688px) {
+  .office-location {
+    margin-top: 20px;
+  }
+}
