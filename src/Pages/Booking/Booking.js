@@ -8,7 +8,7 @@ const Booking = () => {
 
   const email = sessionStorage.getItem("email");
   useEffect(() => {
-    fetch(`http://localhost:5000/singleProduct/${serviceId}`)
+    fetch(`https://pacific-citadel-68715.herokuapp.com/singleProduct/${serviceId}`)
       .then((res) => res.json())
       .then((data) => setService(data));
   }, []);
@@ -17,7 +17,6 @@ const Booking = () => {
   const {
     register,
     handleSubmit,
-    watch,
     formState: { errors },
   } = useForm();
 
@@ -25,7 +24,7 @@ const Booking = () => {
     data.email = email;
     data.status = "pending";
 
-    fetch("http://localhost:5000/confirmOrder", {
+    fetch("https://pacific-citadel-68715.herokuapp.com/confirmOrder", {
       method: "POST",
       headers: { "content-type": "application/json" },
       body: JSON.stringify(data),
