@@ -1,8 +1,8 @@
-import React, { useEffect, useState } from 'react';
-import { Table } from 'react-bootstrap';
+import React, { useEffect, useState } from "react";
+import { Table } from "react-bootstrap";
 
 const MyOrders = () => {
-    const [orders, setOrders] = useState([]);
+  const [orders, setOrders] = useState([]);
 
   const [status, setStatus] = useState("");
 
@@ -11,14 +11,14 @@ const MyOrders = () => {
   };
   console.log(status);
   useEffect(() => {
-    fetch("https://pacific-citadel-68715.herokuapp.com/allOrders")
+    fetch("https://bd-travels-website-backend.vercel.app/allOrders")
       .then((res) => res.json())
       .then((data) => setOrders(data));
   }, []);
 
-    // const status = "apporved";
+  // const status = "apporved";
   const handleUpdate = (id) => {
-    fetch(`https://pacific-citadel-68715.herokuapp.com/updateStatus/${id}`, {
+    fetch(`https://bd-travels-website-backend.vercel.app/updateStatus/${id}`, {
       method: "PUT",
       headers: { "content-type": "application/json" },
       body: JSON.stringify({ status }),

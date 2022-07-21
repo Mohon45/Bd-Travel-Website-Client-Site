@@ -1,14 +1,16 @@
-import React, { useEffect, useState } from 'react';
-import { useParams } from 'react-router';
+import React, { useEffect, useState } from "react";
+import { useParams } from "react-router";
 import { useForm } from "react-hook-form";
 
 const Booking = () => {
-    const { serviceId } = useParams();
+  const { serviceId } = useParams();
   const [service, setService] = useState({});
 
   const email = sessionStorage.getItem("email");
   useEffect(() => {
-    fetch(`https://pacific-citadel-68715.herokuapp.com/singleProduct/${serviceId}`)
+    fetch(
+      `https://bd-travels-website-backend.vercel.app/singleProduct/${serviceId}`
+    )
       .then((res) => res.json())
       .then((data) => setService(data));
   }, []);
@@ -24,7 +26,7 @@ const Booking = () => {
     data.email = email;
     data.status = "pending";
 
-    fetch("https://pacific-citadel-68715.herokuapp.com/confirmOrder", {
+    fetch("https://bd-travels-website-backend.vercel.app/confirmOrder", {
       method: "POST",
       headers: { "content-type": "application/json" },
       body: JSON.stringify(data),
