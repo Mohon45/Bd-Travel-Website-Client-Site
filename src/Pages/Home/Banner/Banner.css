@@ -1,5 +1,6 @@
 .banner {
-  background-image: url("https://i.ibb.co/KbP1H28/flat-lay-yellow-luggage-with-copy-space-1.jpg");
+  background-image: url("../../../images/header-background.jpg");
+  width: 100%;
   background-repeat: no-repeat;
   background-size: cover;
   background-position-y: bottom;
@@ -32,6 +33,7 @@
 @media only screen and (max-width: 688px) {
   .banner {
     width: 100%;
+    height: 350px;
   }
   .banner-title-desc {
     width: auto;

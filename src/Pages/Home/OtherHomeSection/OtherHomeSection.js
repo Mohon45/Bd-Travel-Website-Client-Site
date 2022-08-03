@@ -8,7 +8,7 @@ const OtherHomeSection = () => {
       {/* Facilities Section */}
       <div className="facilities mt-5">
         <div>
-          <i class="fas fa-bookmark fa-3x mb-3"></i>
+          <i className="fas fa-bookmark fa-3x mb-3"></i>
           <h3>Personalized Matching</h3>
           <p>
             Check out our custom matching selection for the very best in unique
@@ -16,7 +16,7 @@ const OtherHomeSection = () => {
           </p>
         </div>
         <div>
-          <i class="fas fa-cubes fa-3x mb-3"></i>
+          <i className="fas fa-cubes fa-3x mb-3"></i>
           <h3>Wide Variety Of Destinations</h3>
           <p>
             The world is filled with such a wide variety of wonderful
@@ -25,7 +25,7 @@ const OtherHomeSection = () => {
           </p>
         </div>
         <div>
-          <i class="fas fa-archive fa-3x mb-3"></i>
+          <i className="fas fa-archive fa-3x mb-3"></i>
           <h3>Highly Qualified Service</h3>
           <p>
             We describe our business as a customer service business which just
@@ -33,7 +33,7 @@ const OtherHomeSection = () => {
           </p>
         </div>
         <div>
-          <i class="far fa-chart-bar fa-3x mb-3"></i>
+          <i className="far fa-chart-bar fa-3x mb-3"></i>
           <h3>Handpicked Hotels</h3>
           <p>
             Hand Picked Hotels are pleased to feature 10 hotels with pools and
@@ -42,7 +42,7 @@ const OtherHomeSection = () => {
           </p>
         </div>
         <div>
-          <i class="fas fa-umbrella fa-3x mb-3"></i>
+          <i className="fas fa-umbrella fa-3x mb-3"></i>
           <h3>Best Price Guarantee</h3>
           <p>
             Our Best Price Guarantee means that you can be sure of booking at
@@ -51,7 +51,7 @@ const OtherHomeSection = () => {
           </p>
         </div>
         <div>
-          <i class="fas fa-users fa-3x mb-3"></i>
+          <i className="fas fa-users fa-3x mb-3"></i>
           <h3>24/7 Support</h3>
           <p>
             Unlike increasing throughput on a production line (making 10% more

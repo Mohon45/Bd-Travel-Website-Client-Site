@@ -11,14 +11,14 @@ const MyOrders = () => {
   };
   console.log(status);
   useEffect(() => {
-    fetch("https://bd-travels-website-backend.vercel.app/allOrders")
+    fetch("https://mysterious-reaches-22237.herokuapp.com/allOrders")
       .then((res) => res.json())
       .then((data) => setOrders(data));
   }, []);
 
   // const status = "apporved";
   const handleUpdate = (id) => {
-    fetch(`https://bd-travels-website-backend.vercel.app/updateStatus/${id}`, {
+    fetch(`https://mysterious-reaches-22237.herokuapp.com/updateStatus/${id}`, {
       method: "PUT",
       headers: { "content-type": "application/json" },
       body: JSON.stringify({ status }),

@@ -11,7 +11,7 @@ const AddServices = () => {
   } = useForm();
 
   const onSubmit = (data) => {
-    fetch("https://bd-travels-website-backend.vercel.app/addServices", {
+    fetch("https://mysterious-reaches-22237.herokuapp.com/addServices", {
       method: "POST",
       headers: { "content-type": "application/json" },
       body: JSON.stringify(data),

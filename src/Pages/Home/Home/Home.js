@@ -11,7 +11,7 @@ const Home = () => {
 
   useEffect(() => {
     axios
-      .get("https://bd-travels-website-backend.vercel.app/services")
+      .get("https://mysterious-reaches-22237.herokuapp.com/")
       .then((res) => {
         if (res.status === 200) {
           setLoading(false);

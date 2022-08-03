@@ -7,6 +7,7 @@ import AddServices from "./Pages/Home/AddServices/AddServices";
 import Admin from "./Pages/Home/Admin/Admin";
 import Footer from "./Pages/Home/Footer/Footer";
 import Home from "./Pages/Home/Home/Home";
+import MessangerChart from "./Pages/Home/MessangerChart/MessangerChart";
 import MyOrders from "./Pages/Home/MyOrders/MyOrders";
 import PrivateRoute from "./Pages/Home/PrivateRoute/PrivateRoute";
 import Services from "./Pages/Home/Services/Services";
@@ -15,7 +16,7 @@ import Header from "./Pages/Shared/Header/Header";
 
 function App() {
   return (
-    <div>
+    <div className="app">
       <AuthProvider>
         <Router>
           <Header></Header>
@@ -45,6 +46,7 @@ function App() {
               <About></About>
             </Route>
           </Switch>
+          <MessangerChart />
           <Footer></Footer>
         </Router>
       </AuthProvider>
