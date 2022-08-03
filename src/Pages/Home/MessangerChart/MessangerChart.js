@@ -4,10 +4,7 @@ import MessengerCustomerChat from "react-messenger-customer-chat";
 const MessangerChart = () => {
   return (
     <div>
-      <MessengerCustomerChat
-        pageId={process.env.MESSANGER_PAGE_ID}
-        appId={process.env.MESSANGER_APP_ID}
-      />
+      <MessengerCustomerChat pageId="101056446048987" appId="567765148180008" />
     </div>
   );
 };
